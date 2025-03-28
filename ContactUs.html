@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - K&Y Jewellery</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/ContactPage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>K&Y Jewellery</h1>
+        </div>
+        <div class="user-cart">
+          <a href="../HTML/Cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a href="#" id="user-status">Login | Register</a>
+        </div>
+      </div>
+      <div class="nav-search-container">
+        <nav>
+          <div class="container">
+            <a href="../HTML/MainPage.html">Home</a>
+            <a href="../HTML/Products.html">Products</a>
+            <a href="../HTML/AboutUs.html">About Us</a>
+            <a href="../HTML/ContactUs.html">Contact Us</a>
+          </div>
+        </nav>
+        <div class="search-bar">
+          <form id="search-form" method="get" action="../HTML/Products.html">
+            <input type="text" placeholder="Search products..." name="q" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Us -->
+    <section class="contact-us">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Reach out to K&Y Jewellery via email or phone. We’d love to hear from
+          you!
+        </p>
+        <form id="contact-form" method="post" action="/submit-contact">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Email:
+          <a href="mailto:support@knyjewellery.com">support@knyjewellery.com</a>
+          | Hotline: <a href="tel:0123456789">0123 456 789</a>
+        </p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <p>K&Y Jewellery - Address: 123 ABC Street, Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <!-- Import JavaScript files -->
+    <script src="../Js/script.js"></script>
+    <script src="../Js/ContactUs.js"></script>
+  </body>
+</html>

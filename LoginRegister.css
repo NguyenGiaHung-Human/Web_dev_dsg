@@ -1,0 +1,138 @@
+/* CSS/LoginRegister.css */
+
+.login-register {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.login-register .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px; /* Tăng khoảng cách giữa hai cột từ 30px lên 60px */
+    position: relative;
+}
+
+.auth-column {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-column h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.auth-column p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.auth-column form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-column label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+}
+
+.auth-column input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.auth-column button {
+    padding: 10px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-column button:hover {
+    background-color: #e65b50;
+}
+
+/* Or Divider */
+.or-divider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dancing Script', cursive; /* Đổi font chữ sang Dancing Script để đồng bộ với tiêu đề */
+    font-size: 1.5em; /* Giảm kích thước chữ để trông tinh tế hơn */
+    color: #888; /* Màu xám nhạt để không quá nổi bật */
+    background-color: #f9f9f9;
+    padding: 5px 15px; /* Tăng padding để tạo không gian xung quanh chữ */
+}
+
+/* Toggle Button for Mobile */
+.toggle-auth {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-auth button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-auth button:hover {
+    background-color: #e65b50;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .auth-column {
+        display: none;
+    }
+
+    .auth-column.active {
+        display: block;
+    }
+
+    .or-divider {
+        display: none;
+    }
+
+    .toggle-auth {
+        display: block;
+    }
+}

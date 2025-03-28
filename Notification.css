@@ -1,0 +1,69 @@
+/* CSS/Notification.css */
+
+/* Overlay để làm mờ nền khi thông báo xuất hiện */
+.notification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền */
+    display: none; /* Ẩn mặc định */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Container của thông báo */
+.notification {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px; /* Bo tròn 4 góc */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Nội dung thông báo */
+.notification p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    margin: 0 0 20px 0;
+}
+
+/* Nút OK trong thông báo */
+.notification button {
+    padding: 8px 20px;
+    background-color: #6a0dad; /* Màu tím đồng bộ với giao diện */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notification button:hover {
+    background-color: #5a0c9d; /* Màu tím đậm hơn khi hover */
+}
+.notification {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    transform: scale(0.8); /* Bắt đầu nhỏ */
+    opacity: 0; /* Ẩn ban đầu */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Hiệu ứng mượt */
+}
+
+.notification-overlay.active .notification {
+    transform: scale(1); /* Phóng to */
+    opacity: 1; /* Hiển thị */
+}

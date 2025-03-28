@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - K&Y Jewellery</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/Checkout.css" />
+    <link rel="stylesheet" href="../CSS/Notification.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>K&Y Jewellery</h1>
+        </div>
+        <div class="user-cart">
+          <a href="../HTML/Cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a href="../HTML/PersonalInfo.html" id="user-status"
+            >Personal Information</a
+          >
+        </div>
+      </div>
+      <div class="nav-search-container">
+        <nav>
+          <div class="container">
+            <a href="../HTML/MainPage.html">Home</a>
+            <a href="../HTML/Products.html">Products</a>
+            <a href="../HTML/AboutUs.html">About Us</a>
+            <a href="../HTML/ContactUs.html">Contact Us</a>
+          </div>
+        </nav>
+        <div class="search-bar">
+          <form id="search-form">
+            <input type="text" placeholder="Search products..." />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+      <div class="container">
+        <h2>Checkout</h2>
+        <div class="checkout-content">
+          <!-- Buyer Information -->
+          <div class="buyer-info">
+            <h3>Buyer Information</h3>
+            <div class="info-details">
+              <p><strong>Full Name:</strong> <span id="buyer-name"></span></p>
+              <p>
+                <strong>Phone Number:</strong> <span id="buyer-phone"></span>
+              </p>
+              <p><strong>Address:</strong> <span id="buyer-address"></span></p>
+            </div>
+            <a href="../HTML/PersonalInfo.html" class="edit-link"
+              >Edit Information</a
+            >
+          </div>
+
+          <!-- Order Summary -->
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="order-items" id="order-items">
+              <!-- Order items will be populated dynamically -->
+            </div>
+            <p><strong>Total:</strong> <span id="order-total">0 VND</span></p>
+          </div>
+
+          <!-- Payment Method -->
+          <div class="payment-method">
+            <h3>Payment Method</h3>
+            <div class="payment-options">
+              <label>
+                <input
+                  type="radio"
+                  name="payment-method"
+                  value="cash"
+                  checked
+                />
+                Cash on Delivery
+              </label>
+              <label>
+                <input type="radio" name="payment-method" value="card" />
+                Card Payment
+              </label>
+            </div>
+          </div>
+        </div>
+        <button id="place-order-btn" class="action-btn">Place Order</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Email:
+          <a href="mailto:contact@kyjewellery.com">contact@kyjewellery.com</a> |
+          Hotline: <a href="tel:0123456789">0123 456 789</a>
+        </p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <p>K&Y Jewellery - Address: 123 ABC Street, Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <!-- Import JavaScript files -->
+    <script src="../Js/Bracelets.js"></script>
+    <script src="../Js/Earrings.js"></script>
+    <script src="../Js/Necklaces.js"></script>
+    <script src="../Js/Rings.js"></script>
+    <script src="../Js/Notification.js"></script>
+    <script src="../Js/script.js"></script>
+    <script src="../Js/Checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../CSS/Notification.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Register - K&Y Jewellery</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/LoginRegister.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>K&Y Jewellery</h1>
+        </div>
+        <div class="user-cart">
+          <a href="../HTML/Cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a href="#" id="user-status">Login | Register</a>
+          <a href="#" id="logout-btn" style="display: none">Logout</a>
+        </div>
+      </div>
+      <div class="nav-search-container">
+        <nav>
+          <div class="container">
+            <a href="../HTML/MainPage.html">Home</a>
+            <a href="../HTML/Products.html">Products</a>
+            <a href="../HTML/AboutUs.html">About Us</a>
+            <a href="../HTML/ContactUs.html">Contact Us</a>
+          </div>
+        </nav>
+        <div class="search-bar">
+          <form id="search-form">
+            <input type="text" placeholder="Search products..." />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login / Register -->
+    <section class="login-register">
+      <div class="container">
+        <div class="auth-container">
+          <!-- Login Section -->
+          <div class="auth-column login-column" id="login-section">
+            <h2>Login</h2>
+            <p>Already have an account? Sign in below.</p>
+            <form id="login-form">
+              <label for="login-email">Email:</label>
+              <input
+                type="email"
+                id="login-email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+              <label for="login-password">Password:</label>
+              <input
+                type="password"
+                id="login-password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+              <button type="submit">Login</button>
+            </form>
+          </div>
+
+          <!-- Or Divider -->
+          <div class="or-divider">Or</div>
+
+          <!-- Register Section -->
+          <div class="auth-column register-column" id="register-section">
+            <h2>Register</h2>
+            <p>Don't have an account? Create one now!</p>
+            <form id="register-form">
+              <label for="register-email">Email:</label>
+              <input
+                type="email"
+                id="register-email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+              <label for="register-password">Password:</label>
+              <input
+                type="password"
+                id="register-password"
+                name="password"
+                placeholder="Create a password"
+                required
+              />
+              <label for="confirm-password">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm your password"
+                required
+              />
+              <button type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Toggle Button for Mobile -->
+        <div class="toggle-auth">
+          <button id="toggle-auth-btn" onclick="toggleAuthSection()">
+            Switch to Register
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Email:
+          <a href="mailto:contact@kyjewellery.com">contact@kyjewellery.com</a> |
+          Hotline: <a href="tel:0123456789">0123 456 789</a>
+        </p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <p>K&Y Jewellery - Address: 123 ABC Street, Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <!-- Import JavaScript files -->
+    <script src="../Js/Bracelets.js"></script>
+    <script src="../Js/Earrings.js"></script>
+    <script src="../Js/Necklaces.js"></script>
+    <script src="../Js/Rings.js"></script>
+    <script src="../Js/script.js"></script>
+    <script src="../Js/LoginRegister.js"></script>
+    <script src="../Js/Notification.js"></script>
+    <script src="../Js/script.js"></script>
+  </body>
+</html>

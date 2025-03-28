@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - K&Y Jewellery</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/AboutPage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>K&Y Jewellery</h1>
+        </div>
+        <div class="user-cart">
+          <a href="../HTML/Cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a href="#" id="user-status">Login | Register</a>
+        </div>
+      </div>
+      <div class="nav-search-container">
+        <nav>
+          <div class="container">
+            <a href="../HTML/MainPage.html">Home</a>
+            <a href="../HTML/Products.html">Products</a>
+            <a href="../HTML/AboutUs.html">About Us</a>
+            <a href="../HTML/ContactUs.html">Contact Us</a>
+          </div>
+        </nav>
+        <div class="search-bar">
+          <form id="search-form">
+            <input type="text" placeholder="Search products..." />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+      <div class="container">
+        <h2>About K&Y Jewellery</h2>
+
+        <!-- Our Story -->
+        <div class="about-section">
+          <h3>Our Story</h3>
+          <p>
+            Welcome to K&Y Jewellery, where elegance meets craftsmanship.
+            Founded in 2010, we have over a decade of experience in creating
+            exquisite jewelry that captures the essence of beauty and
+            timelessness. Our journey began with a passion for designing unique
+            pieces that tell a story, celebrate love, and mark life’s most
+            precious moments.
+          </p>
+          <p>
+            At K&Y Jewellery, we believe that every piece of jewelry should be
+            as unique as the person wearing it. That’s why we work closely with
+            skilled artisans to craft collections that blend modern trends with
+            classic designs, ensuring that each piece is a work of art.
+          </p>
+        </div>
+
+        <!-- Our Team -->
+        <div class="about-section">
+          <h3>Our Team</h3>
+          <p>
+            Our team is a family of passionate designers, craftsmen, and jewelry
+            enthusiasts dedicated to bringing you the best. Led by our founders,
+            Karen and Yvonne, we combine creativity and expertise to create
+            jewelry that resonates with our customers. From sourcing the finest
+            materials to perfecting every detail, our team is committed to
+            excellence.
+          </p>
+          <div class="team-gallery">
+            <div class="team-member">
+              <img
+                src="../Product_Picture/Team/karen.jpg"
+                alt="Karen"
+                onerror="this.src='https://placehold.co/150x150?text=Karen'"
+              />
+              <h4>Karen - Co-Founder & Designer</h4>
+            </div>
+            <div class="team-member">
+              <img
+                src="../Product_Picture/Team/yvonne.jpg"
+                alt="Yvonne"
+                onerror="this.src='https://placehold.co/150x150?text=Yvonne'"
+              />
+              <h4>Yvonne - Co-Founder & Creative Director</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Values -->
+        <div class="about-section">
+          <h3>Our Values</h3>
+          <ul class="values-list">
+            <li>
+              <strong>Quality:</strong> We use only the finest materials to
+              ensure every piece is of the highest standard.
+            </li>
+            <li>
+              <strong>Creativity:</strong> Our designs are inspired by the
+              beauty of nature, love, and modern elegance.
+            </li>
+            <li>
+              <strong>Customer Satisfaction:</strong> Your happiness is our
+              priority, and we strive to provide exceptional service.
+            </li>
+            <li>
+              <strong>Sustainability:</strong> We are committed to ethical
+              sourcing and sustainable practices in all our operations.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="about-section cta">
+          <h3>Discover Our Collections</h3>
+          <p>
+            Explore our stunning range of rings, necklaces, earrings, and
+            bracelets, each crafted to make you shine.
+          </p>
+          <a href="../HTML/Products.html" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Email:
+          <a href="mailto:contact@kyjewellery.com">contact@kyjewellery.com</a> |
+          Hotline: <a href="tel:0123456789">0123 456 789</a>
+        </p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <p>K&Y Jewellery - Address: 123 ABC Street, Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <!-- Import JavaScript files -->
+    <script src="../Js/Bracelets.js"></script>
+    <script src="../Js/Earrings.js"></script>
+    <script src="../Js/Necklaces.js"></script>
+    <script src="../Js/Rings.js"></script>
+    <script src="../Js/script.js"></script>
+  </body>
+</html>

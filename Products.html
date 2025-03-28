@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - K&Y Jewellery</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/Products.css" />
+    <link rel="stylesheet" href="../CSS/Notification.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>K&Y Jewellery</h1>
+        </div>
+        <div class="user-cart">
+          <a href="../HTML/Cart.html">Cart (<span id="cart-count">0</span>)</a>
+          <a href="../HTML/PersonalInfo.html" id="user-status"
+            >Personal Information</a
+          >
+          <a href="#" id="logout-btn" style="display: none">Logout</a>
+        </div>
+      </div>
+      <div class="nav-search-container">
+        <nav>
+          <div class="container">
+            <a href="../HTML/MainPage.html">Home</a>
+            <a href="../HTML/Products.html">Products</a>
+            <a href="../HTML/AboutUs.html">About Us</a>
+            <a href="../HTML/ContactUs.html">Contact Us</a>
+          </div>
+        </nav>
+        <div class="search-bar">
+          <form id="search-form">
+            <input type="text" placeholder="Search products..." />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <h2>All Products</h2>
+        <div class="filters">
+          <label for="category-filter">Category:</label>
+          <select id="category-filter">
+            <option value="all">All</option>
+            <option value="bracelets">Bracelets</option>
+            <option value="earrings">Earrings</option>
+            <option value="necklaces">Necklaces</option>
+            <option value="rings">Rings</option>
+          </select>
+          <label for="sort-filter">Sort by Price:</label>
+          <select id="sort-filter">
+            <option value="default">Default</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+          </select>
+        </div>
+        <div class="product-list" id="product-list">
+          <!-- Products will be populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Email:
+          <a href="mailto:contact@kyjewellery.com">contact@kyjewellery.com</a> |
+          Hotline: <a href="tel:0123456789">0123 456 789</a>
+        </p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <p>K&Y Jewellery - Address: 123 ABC Street, Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <!-- Import JavaScript files -->
+    <script src="../Js/Bracelets.js"></script>
+    <script src="../Js/Earrings.js"></script>
+    <script src="../Js/Necklaces.js"></script>
+    <script src="../Js/Rings.js"></script>
+    <script src="../Js/Notification.js"></script>
+    <script src="../Js/script.js"></script>
+  </body>
+</html>

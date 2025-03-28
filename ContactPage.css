@@ -1,0 +1,50 @@
+/* ContactUs.css */
+
+/* Liên Hệ */
+.contact-us {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-us h2 {
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-us label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #4B0082;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-us textarea {
+  height: 100px;
+}
+
+.contact-us button {
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us button:hover {
+  background-color: #6A0DAD;
+}
